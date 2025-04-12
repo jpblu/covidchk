@@ -73,7 +73,7 @@
 
 			<!-- Dati Provincia -->
 			<?	if (isset($_GET['prov'])) { $codprov = $_GET['prov']; } else { $codprov = '034'; }
-			    $provdata = SStats::getCV19Table($codprov,$startdate,$enddate);
+			  $provdata = SStats::getCV19Table($codprov,$startdate,$enddate);
 				$regdata = SStats::getCV19PercTmp($provdata[0]['codice_regione']);
 				$regvacc = SStats::getCV19Vacc($provdata[0]['codice_regione']);
 			?>

@@ -2,7 +2,7 @@ lib/config.php
 docs/*.*
 !docs/*.pdf
 !docs/*.sql
-file/*.*
-logs/*.*
+file/*.csv
+!index.htm
+logs/*.log
 .DS_Store
-logs

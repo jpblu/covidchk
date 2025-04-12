@@ -21,6 +21,7 @@ require("../lib/logs.php");
 if (isset($_POST['token']) && $_POST['token'] == GlobalConfig::$auth_token) {
 
 	//Effettuo Upload del file
+	$logFilePath = __DIR__ . '/../logs/cronLog.log';
 	echo "Carico i file...";
 	flush();
 	unlink('../file/covid19_province.csv');
@@ -275,11 +276,11 @@ if (isset($_POST['token']) && $_POST['token'] == GlobalConfig::$auth_token) {
 		echo "OK!<br>";
 
 		$logtxt = "CSV Update OK";
-		Logs::writeBatchLog("logs/cronLog.txt", $logtxt);
+		Logs::writeBatchLog($logFilePath, $logtxt);
 
 	} catch (Exception $e) {
 		echo "errore: ".$e->getMessage();
-		Logs::writeBatchLog("logs/cronLog.txt", "ERROR: ".$e->getMessage());
+		Logs::writeBatchLog($logFilePath, "ERROR: ".$e->getMessage());
 		exit;
 	}
 } else {
