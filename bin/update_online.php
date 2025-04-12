@@ -10,9 +10,9 @@
  * @License       	Creative Commons By-Nc-Nd (http://creativecommons.org/licenses/by-nc-nd/3.0/)
  * @File		  			update_oniline.php
  * @Description	  	Refresh Data DB from PcM-DpC (https://github.com/pcm-dpc/COVID-19)
- * @Version		  		1.2.1
+ * @Version		  		1.2.2
  * @Created		  		2020-03-20
- * @Updated		  		2024-08-24
+ * @Updated		  		2025-04-12
  */
 
 require("../lib/config.php");

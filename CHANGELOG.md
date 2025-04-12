@@ -1,5 +1,8 @@
 ## CHANGELOG
 
+# [1.2.1] - 2025-04-12
+- fix save Log
+
 # [1.2.1] - 2024-08-24
 - fix CSV update with new file structure
 - secure update script with auth_token
